@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LET'S START"
+        android:textColor="?attr/colorOnBackground"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/kg_to_pound"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/card_color">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/weight_scale_solid"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kg to pound"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textSize="16sp"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/meter_to_feet"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/card_color">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/length"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="meter to feet"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textSize="16sp"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/feet_to_inch"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/card_color">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/feet_to_inch"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="feet  to inch"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textSize="16sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/celsius_to_fahrenheit"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/card_color">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp" android:src="@drawable/celsius_and_fahrenheit"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="celsius to fahrenheit"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textSize="16sp"
+                android:padding="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/celsius_to_kelvin"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/card_color">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/celsius_to_kelvin"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="celsius to kelvin"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textSize="16sp"
+                android:padding="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fahrenheit_to_kelvin"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="@color/card_color">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/fahrenheit_to_kelvin"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fahrenheit to kelvin"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textSize="16sp"
+                android:padding="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    
+
+</LinearLayout>
