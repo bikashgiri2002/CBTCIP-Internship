@@ -60,5 +60,26 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i3);
             }
         });
+        c4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i4 = new Intent(MainActivity.this, CelsiusToFahrenheit.class);
+                startActivity(i4);
+            }
+        });
+        c5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i5 = new Intent(MainActivity.this, CelsiusToKelvin.class);
+                startActivity(i5);
+            }
+        });
+        c6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i6 = new Intent(MainActivity.this, FahrenheitToKelvin.class);
+                startActivity(i6);
+            }
+        });
     }
 }
